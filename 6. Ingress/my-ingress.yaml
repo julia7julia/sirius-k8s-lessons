@@ -9,10 +9,10 @@ spec:
     - host: hello-sirius.info
       http:
         paths:
-          - path: /
+          - path: /v2
             pathType: Prefix
             backend:
               service:
-                name: web
+                name: web2
                 port:
                   number: 8080
